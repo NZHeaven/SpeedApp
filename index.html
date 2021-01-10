@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed App</title>
+</head>
+<body>
+    <div id="speedGuage" class="pulsating-circle" data-currentSpeed="0"></div>
+</body>
+<script>
+    const speedGuage = document.getElementById("speedGuage");
+    function getspeed(){
+        let speed = geolocationCoordinatesInstance.speed
+        speedGuage.setAttribute("data-currentSpeed",speed);
+    }
+    setInterval(() => {
+        changeSpeed()
+    }, 200);
+
+</script>
+</html>
