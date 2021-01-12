@@ -13,10 +13,11 @@
     const speedGuage = document.getElementById("speedGuage");
     function getspeed(){
         let speed = geolocationCoordinatesInstance.speed
+        console.log(speed);
         speedGuage.setAttribute("data-currentSpeed",speed);
     }
     setInterval(() => {
-        changeSpeed()
+        getspeed()
     }, 200);
 
 </script>
