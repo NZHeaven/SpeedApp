@@ -12,7 +12,7 @@
 <script>
     const speedGuage = document.getElementById("speedGuage");
     function getspeed(){
-        let speed = geolocationCoordinatesInstance.speed;
+        let speed = navigatorgeolocationCoordinatesInstance.speed;
         speedGuage.setAttribute("data-currentSpeed",speed);
         console.log(speed);
     }
