@@ -27,7 +27,7 @@
         var speed = pos.coords.speed;
         if (speed != null) {
             speed *= 3.6;
-            speedGuage.setAttribute("data-currentSpeed", speed.toFixed(2));
+            speedGuage.setAttribute("data-currentSpeed", speed.toFixed(0));
         }
         console.log(speed);
     }
